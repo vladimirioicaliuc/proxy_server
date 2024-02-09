@@ -8,7 +8,7 @@ const PROXY_SERVER_HOST = 'ENTER_HOST_HERE';
 
 app.use(function (req, res, next) {
     // allow cors only on port 3002
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3002');
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
     // allow necessary methods
     res.header('Access-Control-Allow-Methods', 'GET, PUT, PATCH, POST, DELETE');
     // allow credentials so that the BE request gets authenticated on port ${PORT} and be available on proxy
